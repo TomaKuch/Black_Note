@@ -1,0 +1,22 @@
+﻿<Window x:Class="Black_Note.DeleteForm"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Black_Note"
+        mc:Ignorable="d"
+        Title="DeleteWindow" Height="206" Width="477" Background="#FFD1E5F5">
+    <Grid Margin="0,0,-0.333,0.667">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="76*"/>
+            <ColumnDefinition Width="81*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="15*"/>
+            <RowDefinition Height="12*"/>
+        </Grid.RowDefinitions>
+        <Label x:Name="label" Content="Are you sure want to delete this note?" HorizontalAlignment="Left" Margin="32,8,0,10" Height="42" Width="386" HorizontalContentAlignment="Center" FontSize="16" FontFamily="Segoe Print" VerticalAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF0A16FF" Grid.ColumnSpan="2"/>
+        <Button x:Name="button" Content="Yes" HorizontalAlignment="Left" Margin="10,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="208" Height="58" FontSize="24" FontFamily="Segoe Print" Background="#FFF34121" BorderBrush="#FFF34121" Click="Delete" />
+        <Button x:Name="button_Copy" FontFamily="Segoe Print" Content="No" HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="1" VerticalAlignment="Top" Width="208" Grid.Column="1" Height="58"  FontSize="24" />
+    </Grid>
+</Window>

@@ -1,0 +1,30 @@
+﻿<Window x:Class="Black_Note.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Black_Note"
+        mc:Ignorable="d"
+        Title="BlackNote" Height="460" Width="800" MinHeight="460" MaxHeight="460" MinWidth="800" MaxWidth="800" Icon="icon.png" WindowStartupLocation="CenterScreen" Closing="SaveInDB">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="265*"/>
+            <ColumnDefinition Width="261*"/>
+            <ColumnDefinition Width="268*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40.667"/>
+            <RowDefinition Height="336"/>
+            <RowDefinition Height="47"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="button" Content="ADD NEW NOTE" HorizontalAlignment="Left" Grid.Row="2" VerticalAlignment="Top" Width="793" Height="46" FontSize="20" FontFamily="Segoe Script" BorderBrush="#FF0D1DD3" BorderThickness="3" Grid.ColumnSpan="3" Click="button_Click"/>
+        <Button x:Name="button1" Content="Sort by priority" HorizontalAlignment="Left" Height="41" VerticalAlignment="Bottom" Width="265" FontFamily="Segoe Script" Margin="0,0,0,0.333" Grid.ColumnSpan="2" Click="SortByPriority"/>
+        <Button x:Name="button2" Content="Sort by tag" HorizontalAlignment="Left" Height="41" VerticalAlignment="Bottom" Width="264" FontFamily="Segoe Script" Grid.Column="1" Margin="0.333,0,0,0.333" Grid.ColumnSpan="2" Click="SortByTag"/>
+        <Button x:Name="button3" Content="Sort by category" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="264" FontFamily="Segoe Script" Grid.Column="2" Margin="3.667,0,0,0" Click="SortByCategory"/>
+        <Border BorderBrush="#FF0D1DD3" BorderThickness="4" HorizontalAlignment="Left" Height="41" VerticalAlignment="Top" Width="265" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="#FF0D1DD3" BorderThickness="4" Grid.Column="1" HorizontalAlignment="Left" Height="41" Margin="0.333,0,0,0" VerticalAlignment="Top" Width="264" Grid.ColumnSpan="2"/>
+        <Border BorderBrush="#FF0D1DD3" BorderThickness="4" Grid.Column="2" HorizontalAlignment="Left" Height="41" Margin="3.667,0,0,0" VerticalAlignment="Top" Width="264"/>
+        <ListBox x:Name="NoteListBox" Grid.ColumnSpan="3" HorizontalAlignment="Left" Height="337" Margin="0,41,0,0" VerticalAlignment="Top" Width="793" Grid.RowSpan="2" Background="#FFD1E5F5">
+        </ListBox>
+    </Grid>
+</Window>
